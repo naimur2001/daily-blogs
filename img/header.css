@@ -1,0 +1,283 @@
+.header{
+  
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(222, 218, 218);
+  
+}
+.left-section{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.ham-menu{
+  height: 24px;
+  margin-right: 20px;
+  margin-left: 22px;
+  cursor: pointer;
+  position: relative;
+  
+}
+.ham-hover{
+  height: 50px;
+  width: 50px;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+  
+  margin-left: 9px;
+  margin-right: 10px;
+}
+.ham-hover:hover{
+  background-color:rgb(210, 210, 210);
+}
+
+.y-logo{
+  height: 20px;
+  cursor: pointer;
+}
+
+.middle-section{
+
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 800px;
+  display: flex;
+  
+  align-items: center;
+}
+.search-bar{
+flex:1;
+height: 36px;
+padding-left: 10px;
+font-family: Arial;
+font-size: 15px;
+border: rgb(171, 169, 169) solid 1px;
+border-radius: 25px 0 0 25px;
+box-shadow: inset 0px 0px 10px 3px rgba(0,0,0,0.10);
+outline: none;
+width: 0;
+}
+.search-bar::placeholder{
+  font-family: Arial;
+  font-size: 16px;
+ 
+}
+.ser-but{
+  height: 36px;
+  width: 60px;
+  background-color: rgb(240, 240, 240);
+  border:rgb(173, 172, 172) solid 1px;
+  border-radius: 0 25px 25px 0;
+  margin-left: -1px;
+  margin-right: 10px;
+  cursor: pointer;
+  position: relative;
+}
+.ser-but .tooltip1 {
+  position: absolute;
+  background-color:gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 5px;
+  right: 1px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity  0.15s;
+  pointer-events: none;
+}
+.ser-but:hover .tooltip1{
+opacity: 1;
+}
+
+.mic-but{
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  border: none;
+  padding-bottom: 20px;
+  background-color:rgb(240, 240, 240);
+  cursor: pointer;
+  position: relative;
+}
+.mic-but .tooltip2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color:gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 5px;
+  right: -50px;
+  bottom: -30px;
+
+  opacity: 0;
+  transition: opacity  0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.mic-but:hover .tooltip2{
+opacity: 1;
+}
+
+
+.mid-im1{
+  height: 25px;
+  margin-top: 4px;
+}
+.mid-im2{
+  height: 24px;
+  margin-top: 4px;
+
+}
+.right-section{
+  
+  width: 180px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.r-im1{
+height: 28px;
+}
+.up{
+  position: relative;
+}
+.up .tooltip3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color:gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 5px;
+  right: -15px;
+  bottom: -35px;
+
+  opacity: 0;
+  transition: opacity  0.15s;
+  pointer-events: none;
+  white-space: nowrap;  
+}
+.up:hover .tooltip3{
+  opacity: 1;
+}
+
+.upload{
+  position: absolute;
+  top: 5.5px;
+  right: 8.5px;
+  font-family: arial;
+  font-size: 12px;
+   font-weight: bold;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 10px;
+}
+.r-im2{
+  height: 28px;
+}
+.noti{
+  position: relative;
+}
+.noti .tooltip4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color:gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 5px;
+  right: -30px;
+  bottom: -35px;
+
+  opacity: 0;
+  transition: opacity  0.15s;
+  pointer-events: none;
+  white-space: nowrap;  
+}
+.noti:hover .tooltip4{
+  opacity: 1;
+}
+.noti-count{
+  position: absolute;
+  top: -4px;
+  right: -5px;
+  background-color: rgb(200, 0, 0);
+  color: white;
+  font-family: arial;
+  font-size: 11px;
+  padding: 2px 5px 2px 5px;
+  border-radius: 10px;
+  border: 1.5px solid white;
+  z-index: 200;
+}
+.r-im3{
+  height: 28px;
+}
+.block{
+  position: relative;
+}
+.block .tooltip5{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color:gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 5px;
+  right: -15px;
+  bottom: -35px;
+
+  opacity: 0;
+  transition: opacity  0.15s;
+  pointer-events: none;
+  white-space: nowrap;  
+}
+.block:hover .tooltip5{
+  opacity: 1;
+}
+.r-im4{
+  height: 34px;
+  width:30px;
+  border-radius: 17px;
+}
